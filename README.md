@@ -3,7 +3,8 @@
 Si consideri un linguaggio costruito a partire dalla stessa sintassi concreta di Pascal.
 
 In tale linguaggio si hanno procedure e funzioni. Si hanno le operazioni aritmetiche, booleane e
-relazionali standard ed inoltre 8 procedure predefinite (`write | read`)(`Int | Real | Char | String`).
+relazionali standard ed inoltre 8 procedure predefinite (`write | read`) (`Int | Real | Char | String`).
+
 Le `read...` hanno argomento per riferimento.
 
 Non è necessario avere tipi di dato definiti dall’utente.
@@ -38,6 +39,10 @@ parsing del contenuto, l’analisi di semantica statica e il pretty-print.
 Si tenga presente che del linguaggio Pascal, da cui si trae ispirazione per la sintassi concreta, non
 si richiede di capire la semantica di funzionamento (irrilevante ai fini della soluzione) ma solo di
 utilizzare le stesse scelte di sintassi concreta relativamente ai costrutti (canonici) previsti dal testo.
+
+# Avviare il programma
+
+Usare il comando `make` per eseguire il programma e `make test` per eseguire alcuni test prestabiliti.
 
 # License
 
