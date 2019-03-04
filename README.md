@@ -38,3 +38,7 @@ parsing del contenuto, l’analisi di semantica statica e il pretty-print.
 Si tenga presente che del linguaggio Pascal, da cui si trae ispirazione per la sintassi concreta, non
 si richiede di capire la semantica di funzionamento (irrilevante ai fini della soluzione) ma solo di
 utilizzare le stesse scelte di sintassi concreta relativamente ai costrutti (canonici) previsti dal testo.
+
+# License
+
+See the [LICENSE](https://github.com/rob93c/ProgettoLC1/blob/master/LICENSE.md) file for license rights and limitations (MIT).
