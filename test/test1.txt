@@ -1,0 +1,17 @@
+program test;
+{
+
+{ Questo è un commento, le seguenti sono tutte dichiarazioni corrette }
+var a : integer = 10;
+const TEST = 29;
+var po : ^char;
+var arr : array [0 .. 10] of boolean;
+var x : string = "casa";
+
+{ Questo è un commento, le seguenti sono assegnamenti corretti }
+a := 44;
+po^ := 'w';
+arr[0] := true;
+x := "testiamo";
+
+}.

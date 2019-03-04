@@ -1,0 +1,28 @@
+program test;
+{
+
+{ Definizioni di procedure corrette (con parametri passati per valore e riferimento) }
+procedure prova(x:integer);
+begin
+x := 1;
+end;
+
+procedure provaRef(var y:integer);
+begin
+y := y - 27;
+end;
+
+{ Definizioni di funzioni corrette }
+
+function demoVal(a:string):string;
+begin
+a:= "gatto";
+end;
+
+function demoRef(var b:boolean; var c:boolean):boolean;
+begin
+b := true;
+c := b;
+end;
+
+}.

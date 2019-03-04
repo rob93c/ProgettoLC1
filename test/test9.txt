@@ -1,0 +1,33 @@
+program test;
+{
+
+{ Esempi di cicli corretti }
+
+var x : real = 0.99;
+x := 1.99;
+
+procedure abc (x:real ; k:integer);
+begin
+	for i := 0 to 10 do
+	begin
+	x := x + 1;
+	end;
+
+	while (x < 100) do
+	begin x := x / 0.05;
+	end;
+
+end;
+
+{ Esempi di cicli corretti con break e continue }
+
+function def ():string;
+begin
+	while (true) do
+	begin
+	break;
+	end;
+end;
+
+
+}.

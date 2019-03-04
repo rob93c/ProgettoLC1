@@ -1,0 +1,32 @@
+program test;
+{
+
+{* Esempi di if e if-else dentro una procedura senza errori
+ 	con varianti normali e con continue e break				*}
+
+var x : integer = 5;
+const ABC = 1;
+x := 10;
+var cond : string = "ciao";
+
+procedure wow (x:integer ; k:integer);
+begin
+	if (true) then
+	x := 4;
+end;
+
+function uau (var s:char):char;
+begin
+	if (true) then
+	s := 'z';
+	else
+	break;
+end;
+
+procedure goal (var b:string);
+begin
+	if (false) then
+	continue;
+end;
+
+}.

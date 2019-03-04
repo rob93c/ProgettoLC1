@@ -1,0 +1,17 @@
+program test;
+{
+
+{ Tra le seguenti ci sono dichiarazioni con errori }
+var a : integer = '2';
+const TEST = 29;
+var po : ^char;
+var arr : array [0 .. 10] of boolean;
+var x : string = "casa";
+
+{ Tra le seguenti ci sono assegnamenti sbagliati }
+a := 44;
+po^ := 'w';
+arr[0] := 20;
+x := "testiamo";
+
+}.

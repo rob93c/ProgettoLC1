@@ -1,0 +1,18 @@
+program test;
+{
+
+var prova : integer = 10;
+
+{ Definizione di procedura con errori nella dichiarazione }
+procedure prova(x:integer);
+begin
+x := 1 + 7.9;
+end;
+
+{ Definizione di funzione con errori nella dichiarazione }
+function prova(x:integer):string;
+begin
+x := 1 + 7.9+"marco"; { non viene valutato questo errore perchè viene trovato l'errore precedente }
+end;
+
+}.
