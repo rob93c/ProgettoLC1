@@ -1,0 +1,18 @@
+program test;
+{
+
+var p : integer = 10;
+
+{ Definizione di procedura con errori al suo interno }
+procedure prova(x:integer);
+begin
+x := 1 + 7.9 + "mario";
+end;
+
+{ Definizione di funzione con errori al suo interno }
+function provaF(z:integer):boolean;
+begin
+z := true + 'c' - 8.4;
+end;
+
+}.

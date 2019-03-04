@@ -1,0 +1,15 @@
+program test;
+{
+
+{* Esempi di if dentro una funzione con errori
+	 nel corpo dell'if 				*}
+
+var abc : integer = 12;
+
+function inside (var x:integer; var y:integer; z:boolean):string;
+begin
+	if (z) then
+	abc := false;
+end;
+
+}.

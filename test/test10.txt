@@ -1,0 +1,20 @@
+program test;
+{
+
+{ Esempi di cicli con errori nella condizione }
+
+procedure abc (x:real ; k:integer);
+begin
+	for i := 0 to 'z' do
+	begin
+	x := x + 1;
+	end;
+
+	while ("casa"+2) do
+	begin x := x / 0.05;
+	end;
+
+end;
+
+
+}.

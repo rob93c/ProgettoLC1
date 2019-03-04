@@ -1,0 +1,24 @@
+program test;
+{
+
+{* Esempi di if e if-else dentro una procedura con errori
+	 nella condizione *}
+
+var x : integer = 5;
+const ABC = 1;
+
+procedure wow (x:integer ; var k:integer);
+begin
+	if ("condition") then
+	x := 4;
+end;
+
+function uau (var s:char):char;
+begin
+	if ('t') then
+	s := 'z';
+	else
+	break;
+end;
+
+}.
