@@ -28,12 +28,12 @@ createEnvironment statements = (defEnv, Correct)
 
 --Controlli sulla lista degli statements
 checkStatementsList [] envState = envState
-checkStatementsList ((StatementDec x):xs) envState@(env, st) 	= checkStatementsList xs (saveErrors envState (dichiarazione x (env, Correct)))
-checkStatementsList ((StatementRexpr x):xs) envState@(env, st)  = checkStatementsList xs (saveErrors envState (rexpression x (env, Correct)))
-checkStatementsList ((StatementAss x):xs) envState@(env, st)  	= checkStatementsList xs (saveErrors envState (assegnamento x (env, Correct)))
-checkStatementsList ((StatementCond x):xs) envState@(env, st) 	= checkStatementsList xs (saveErrors envState (condizioni x (env, Correct)))
-checkStatementsList ((StatementLoop x):xs) envState@(env, st) 	= checkStatementsList xs (saveErrorsBlock envState (ciclo x (env, Correct)))
-checkStatementsList ((StatementFunc x):xs) envState@(env, st) 	= checkStatementsList xs (saveErrors envState (funzione x (env, Correct)))
+checkStatementsList ((StatementDec   x):xs) envState@(env, st) 	= checkStatementsList xs (saveErrors envState (dichiarazione x (env, Correct)))
+checkStatementsList ((StatementRexpr x):xs) envState@(env, st)  = checkStatementsList xs (saveErrors envState (rexpression   x (env, Correct)))
+checkStatementsList ((StatementAss   x):xs) envState@(env, st)  = checkStatementsList xs (saveErrors envState (assegnamento  x (env, Correct)))
+checkStatementsList ((StatementCond  x):xs) envState@(env, st) 	= checkStatementsList xs (saveErrors envState (condizioni    x (env, Correct)))
+checkStatementsList ((StatementLoop  x):xs) envState@(env, st) 	= checkStatementsList xs (saveErrorsBlock envState (ciclo	 x (env, Correct)))
+checkStatementsList ((StatementFunc  x):xs) envState@(env, st) 	= checkStatementsList xs (saveErrors envState (Funzione 	 x (env, Correct)))
 
 --Controlli su blocchi singoli
 checkBlocks (RBool _) stmts envState@(env, st)		 = checkStatementsList stmts envState
