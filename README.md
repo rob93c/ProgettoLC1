@@ -1,4 +1,5 @@
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/d686007205484c5eaea81c4e4bf04418)](https://www.codacy.com/app/rob93c/ProgettoLC1?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=rob93c/ProgettoLC1&amp;utm_campaign=Badge_Grade)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 # Progetto di Linguaggi e Compilatori 1
 
